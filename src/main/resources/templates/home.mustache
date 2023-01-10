@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{{!
+SPDX-FileCopyrightText: Copyright (c) 2023 Andrea Binello ("andbin")
+SPDX-License-Identifier: MIT
+}}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/css/reset.css" type="text/css">
+<link rel="stylesheet" href="/css/home.css" type="text/css">
+<title>Spring Boot 3 &ndash; Mustache Basic Demo</title>
+</head>
+<body>
+
+<h1>Spring Boot 3 &ndash; Mustache Basic Demo</h1>
+
+<table class="app-info">
+  <tr>
+    <td class="label">Java Runtime Version</td>
+    <td class="value">{{appInfo.javaRuntimeVersion}}</td>
+  </tr>
+  <tr>
+    <td class="label">Spring Version</td>
+    <td class="value">{{appInfo.springVersion}}</td>
+  </tr>
+  <tr>
+    <td class="label">Spring Boot Version</td>
+    <td class="value">{{appInfo.springBootVersion}}</td>
+  </tr>
+  <tr>
+    <td class="label">JMustache Version</td>
+    <td class="value">{{appInfo.jMustacheVersion}}</td>
+  </tr>
+  <tr>
+    <td class="label">Server Info</td>
+    <td class="value">{{appInfo.serverInfo}}</td>
+  </tr>
+</table>
+
+</body>
+</html>
